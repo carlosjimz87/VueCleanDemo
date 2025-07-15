@@ -13,8 +13,8 @@ axiosInstance.interceptors.request.use((config) => {
         config.adapter = async () => {
             return {
                 data: [
-                    {id: 1, name: 'Item Uno', description: 'Mock item 1'},
-                    {id: 2, name: 'Item Dos', description: 'Mock item 2'},
+                    {id: 1, name: 'Item 1', description: 'Mock item 1'},
+                    {id: 2, name: 'Item 2', description: 'Mock item 2'},
                 ],
                 status: 200,
                 statusText: 'OK',
@@ -28,7 +28,7 @@ axiosInstance.interceptors.request.use((config) => {
         const id = config.url.split('/').pop()
         config.adapter = async () => {
             return {
-                data: {id, name: `Item ${id}`, description: `Detalle del item ${id}`},
+                data: {id, name: `Item ${id}`, description: `Details of item ${id}`},
                 status: 200,
                 statusText: 'OK',
                 headers: {},
