@@ -12,6 +12,8 @@
     "test:e2e:headed": "playwright test --headed"
   },
   "dependencies": {
+    "@pinia/testing": "^1.0.2",
+    "@vue/test-utils": "^2.4.6",
     "axios": "^1.10.0",
     "daisyui": "^5.0.46",
     "pinia": "^3.0.3",
