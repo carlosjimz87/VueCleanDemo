@@ -1,8 +1,9 @@
 <template>
-  <div class="h-screen flex items-center justify-center bg-base-200">
-    <HelloWorld />
-  </div>
+  <DefaultLayout>
+    <router-view/>
+  </DefaultLayout>
 </template>
+
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 </script>
